@@ -1,0 +1,21 @@
+package javatpoint;
+
+public class RecursionExample {
+	
+	// recursion
+	public static void main(String[] args) {
+		name1(2);
+	}
+
+	static int a =1;
+
+	private static void name1(int N) {
+		// TODO Auto-generated method stub
+		if(a<=N) {
+			System.out.println(a);
+			a++;
+			name1(N);
+		}
+	}
+
+}
