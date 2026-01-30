@@ -1,0 +1,42 @@
+package coreJava;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+class ExampleDemo implements Comparable<ExampleDemo>{
+
+	int age;
+	String name;
+	public ExampleDemo(int age, String name) {
+		this.age = age;
+		this.name = name;
+	}
+	@Override
+	public int compareTo(ExampleDemo that) {
+		return this.age - that.age ;
+	}
+}
+
+
+public class ComparableExample  {
+
+	public static void main(String[] args) {
+		List<ExampleDemo> list = new ArrayList<>();
+		list.add(new ExampleDemo(2499,"Asdf"));
+		list.add(new ExampleDemo(28,"qwer"));
+		list.add(new ExampleDemo(2800,"qwer"));
+		list.add(new ExampleDemo(289,"qwer"));
+		list.add(new ExampleDemo(128,"qwer"));
+		list.add(new ExampleDemo(8,"qwer"));
+
+
+		Collections.sort(list);
+		
+		for(ExampleDemo demo : list) {
+			System.out.println(demo.age +" "+ demo.name);
+			
+		}
+	}
+	
+}
