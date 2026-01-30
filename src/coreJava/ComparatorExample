@@ -1,4 +1,4 @@
-package javatpoint;
+package coreJava;
 
 import java.util.ArrayList;
 import java.util.Collections;
